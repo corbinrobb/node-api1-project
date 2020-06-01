@@ -9,7 +9,19 @@ server.use(bodyparser.json());
 
 server.use(cors());
 
-let users = [];
+let users = [{
+  id: shortid.generate(),
+  name: "Steve",
+  bio: "Name is Steve"
+}, {
+  id: shortid.generate(),
+  name: "Bill",
+  bio: "Name is Bill"
+}, {
+  id: shortid.generate(),
+  name: "Sarah",
+  bio: "Name is Sarah"
+}];
 
 server.get('/api/users', (req, res) => {
   if (!req) res.status(500).json({ errorMessage: "The users information could not be retrieved." });
