@@ -47,11 +47,13 @@ const UserForm = ({ editing, setEditing, users, setUsers }) => {
     <form onSubmit={handleFormSubmit}>
       <input 
         name="name"
+        placeholder="name"
         value={userInfo.name}
         onChange={handleInputChange}
       />
       <input
         name="bio"
+        placeholder="bio"
         value={userInfo.bio}
         onChange={handleInputChange}
       />

@@ -20,7 +20,7 @@ const App = () => {
   }, [])
 
   return (
-    <div>
+    <div className="app">
       <UserList users={users} setUsers={setUsers} setEditing={setEditing} />
       <UserForm editing={editing} setEditing={setEditing} users={users} setUsers={setUsers} />
     </div>

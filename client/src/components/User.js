@@ -13,7 +13,7 @@ const User = ({ name, bio, id, setUsers, users, setEditing }) => {
   }
 
   return (
-    <div>
+    <div className="user-card">
       <h2>{name}</h2>
       <p>{bio}</p>
       <button onClick={() => setEditing({ name, bio, id })}>Edit</button>
